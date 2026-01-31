@@ -36,14 +36,14 @@ export default function ReignitePage() {
 
             <div className="glass p-8 rounded-3xl mb-12">
               <p className="text-gray-300 leading-relaxed text-lg">
-                REIGNITEは、仕事や家庭を持ちながらも「もう一度本気でハンドボールがしたい」という想いを持つ社会人が集まったチームです。経験者から初心者まで、全員が対等に切磋琢磨し、勝利を目指します。週末の練習で日常を忘れ、純粋にスポーツを楽しむ。それが私たちのスタイルです。
+                REIGNITEは、仕事や家庭を持ちながらも「もう一度本気でハンドボールがしたい」という想いを持つ社会人が集まったチームです。南流山中学校を拠点に、経験者から初心者まで全員が対等に切磋琢磨し、勝利を目指します。日曜日の練習で日常を忘れ、純粋にスポーツを楽しむ。それが私たちのスタイルです。
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               {[
                 { icon: FaUsers, label: 'メンバー数', value: '20名' },
-                { icon: FaCalendarDays, label: '練習日', value: '土・日' },
+                { icon: FaCalendarDays, label: '練習時間', value: '日曜 17:00〜19:00' },
                 { icon: FaTrophy, label: '最新実績', value: '県リーグ準優勝' },
                 { icon: FaFire, label: 'モットー', value: '本気で楽しむ' },
               ].map((item, i) => (
@@ -83,10 +83,12 @@ export default function ReignitePage() {
                 まずは気軽に練習を見学しに来てください。
               </p>
               <Link
-                href="#contact"
+                href="https://www.instagram.com/nagasawariku/"
                 className="inline-block px-10 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                お問い合わせ
+                Instagramで問い合わせ
               </Link>
             </div>
           </motion.div>

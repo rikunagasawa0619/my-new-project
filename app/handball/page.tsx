@@ -16,11 +16,11 @@ import GoogleCalendar from '../components/GoogleCalendar'
 export default function HandballPage() {
   const teams = [
     {
-      name: '〇〇柏',
+      name: '中学生チーム（名称調整中）',
       category: '中学生チーム',
       description: '未来のハンドボール選手を育成する中学生チーム。基礎から応用まで丁寧に指導し、全国大会出場を目指します。',
       members: '15名',
-      practice: '週3回',
+      practice: '週1回',
       href: '/handball/junior',
       gradient: 'from-cyan-400 to-blue-500',
     },
@@ -29,7 +29,7 @@ export default function HandballPage() {
       category: '社会人チーム',
       description: '本気で勝利を目指す社会人チーム。経験者から初心者まで、全員が「もう一度燃え上がる」をテーマに活動しています。',
       members: '20名',
-      practice: '週2回',
+      practice: '週1回',
       href: '/handball/reignite',
       gradient: 'from-orange-400 to-red-500',
     },
@@ -37,20 +37,16 @@ export default function HandballPage() {
 
   const facilities = [
     {
-      name: '柏市中央体育館',
-      address: '千葉県柏市柏下73',
-      access: 'JR柏駅から徒歩15分',
-    },
-    {
-      name: '流山市総合運動公園体育館',
-      address: '千葉県流山市野々下1-40-1',
-      access: 'TX流山おおたかの森駅から車で10分',
+      name: '南流山中学校',
+      address: '千葉県流山市（詳細はDMでご案内）',
+      access: '最寄り：南流山駅',
     },
   ]
 
   const achievements = [
     { year: '2024', title: '千葉県社会人リーグ 準優勝', team: 'REIGNITE' },
-    { year: '2023', title: '柏市中学生大会 ベスト4', team: '〇〇柏' },
+    { year: '令和7年', title: '千葉県総合大会 出場', team: '中学生チーム（名称調整中）' },
+    { year: '2023', title: '柏市中学生大会 ベスト4', team: '中学生チーム（名称調整中）' },
     { year: '2023', title: '流山市民大会 優勝', team: 'REIGNITE' },
   ]
 
@@ -72,7 +68,7 @@ export default function HandballPage() {
               HANDBALL
             </h1>
             <p className="text-2xl md:text-3xl lg:text-4xl text-cyan-100 mb-10 font-medium">
-              千葉県柏市・流山市を拠点に活動
+              千葉県流山市・南流山中学校を拠点に活動
             </p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-white text-lg md:text-xl">
               <div className="flex items-center gap-3">
@@ -81,7 +77,7 @@ export default function HandballPage() {
               </div>
               <div className="flex items-center gap-3">
                 <FaLocationDot className="text-cyan-300 text-2xl" />
-                <span className="font-semibold">複数の活動拠点</span>
+                <span className="font-semibold">南流山中学校</span>
               </div>
               <div className="flex items-center gap-3">
                 <FaTrophy className="text-cyan-300 text-2xl" />
@@ -162,7 +158,7 @@ export default function HandballPage() {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">活動予定</h2>
-                <p className="text-gray-400 text-lg">Googleカレンダーと同期された最新のスケジュール</p>
+                <p className="text-gray-400 text-lg">毎週日曜日 17:00〜19:00（予定）</p>
               </div>
               <FaCalendarDays className="text-6xl text-cyan-400 opacity-50" />
             </div>
@@ -185,7 +181,7 @@ export default function HandballPage() {
             className="mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">主な活動場所</h2>
-            <p className="text-gray-400 text-lg text-center mb-12">アクセス良好な複数の体育館で活動しています</p>
+            <p className="text-gray-400 text-lg text-center mb-12">南流山中学校を拠点に活動しています</p>
 
             <div className="grid md:grid-cols-2 gap-8">
               {facilities.map((facility, index) => (
@@ -224,7 +220,7 @@ export default function HandballPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">主な実績</h2>
-            <p className="text-gray-400 text-lg text-center mb-12">近年の大会成績</p>
+            <p className="text-gray-400 text-lg text-center mb-12">近年の大会成績（随時更新）</p>
 
             <div className="space-y-4">
               {achievements.map((achievement, index) => (
@@ -266,15 +262,19 @@ export default function HandballPage() {
             className="mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">活動の様子</h2>
-            <p className="text-gray-400 text-lg text-center mb-12">SNSで日々の活動をチェック</p>
+            <p className="text-gray-400 text-lg text-center mb-12">氷雨会代表のSNSで近況を発信中</p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="glass p-8 rounded-3xl text-center">
                 <FaInstagram className="text-6xl text-pink-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-2">Instagram</h3>
-                <p className="text-gray-400 mb-6">練習風景や大会の様子を投稿中</p>
+                <p className="text-gray-400 mb-6">
+                  公式アカウントは準備中のため、代表アカウントで練習風景や活動報告を発信しています
+                </p>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/nagasawariku/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-pink-500/50 transition-all"
                 >
                   フォローする
@@ -284,9 +284,13 @@ export default function HandballPage() {
               <div className="glass p-8 rounded-3xl text-center">
                 <FaXTwitter className="text-6xl text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-2">X (Twitter)</h3>
-                <p className="text-gray-400 mb-6">試合速報や練習予定をリアルタイム配信</p>
+                <p className="text-gray-400 mb-6">
+                  試合速報や練習予定を代表アカウントから共有しています
+                </p>
                 <a
-                  href="#"
+                  href="https://x.com/rio_hisame"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
                 >
                   フォローする
@@ -309,6 +313,67 @@ export default function HandballPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black" id="faq">
+        <div className="container mx-auto max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">よくある質問</h2>
+            <p className="text-gray-400 text-lg text-center mb-12">参加前に気になるポイントをまとめました</p>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: '年齢制限はありますか？経験がなくても参加できますか？',
+                  a: '年齢制限はありません。経験の有無は問いませんので、初心者の方も歓迎です。',
+                },
+                {
+                  q: '見学や体験参加は可能ですか？',
+                  a: '見学・体験参加は可能です。実際にプレーする場合は参加費がかかります。',
+                },
+                {
+                  q: '参加費はどのくらいかかりますか？',
+                  a: '会場料金や月謝がかかります。詳細はInstagramのDMでご案内します。',
+                },
+                {
+                  q: '練習の頻度や時間帯は？',
+                  a: '週1回を予定しており、日曜日17:00〜19:00で実施しています。',
+                },
+                {
+                  q: '服装や持ち物は？',
+                  a: 'ハンドボールのプレーに適した服装でお越しください。ボールなどは必要に応じてご案内します。',
+                },
+                {
+                  q: '保護者の付き添いは必要ですか？',
+                  a: '付き添いは不要です。見学のみの参加も歓迎しています。',
+                },
+                {
+                  q: '社会人チームの移籍や掛け持ちはできますか？',
+                  a: '社会人チームは移籍・掛け持ちOKです。ご相談ください。',
+                },
+                {
+                  q: '連絡や情報共有はどうしていますか？',
+                  a: 'グループDiscordの導入を予定しています。詳細は順次ご案内します。',
+                },
+                {
+                  q: '出場する大会は？',
+                  a: '年1回の県総合大会に出場しています。柏市民大会やビーチハンドボールの企画も検討中です。',
+                },
+              ].map((item) => (
+                <div key={item.q} className="glass p-6 rounded-2xl border border-white/10">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-3">{item.q}</h3>
+                  <p className="text-gray-400">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact CTA */}
       <section className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-4xl text-center">
@@ -322,20 +387,22 @@ export default function HandballPage() {
               体験練習・見学 随時受付中
             </h2>
             <p className="text-gray-400 mb-8 text-lg">
-              初心者から経験者まで大歓迎！まずはお気軽にお問い合わせください。
+              初心者から経験者まで大歓迎！まずはInstagramのDMでお気軽にお問い合わせください。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="#contact"
+                href="https://www.instagram.com/nagasawariku/"
                 className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                お問い合わせ
+                Instagramで問い合わせ
               </Link>
               <Link
-                href="#"
+                href="#faq"
                 className="px-10 py-4 border-2 border-cyan-500 text-cyan-400 rounded-full font-semibold text-lg hover:bg-cyan-500 hover:text-white transition-all duration-300"
               >
-                よくある質問
+                よくある質問を見る
               </Link>
             </div>
           </motion.div>

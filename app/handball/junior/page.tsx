@@ -14,8 +14,8 @@ export default function JuniorTeamPage() {
             <Link href="/handball" className="inline-flex items-center text-cyan-200 hover:text-white mb-4 transition-colors">
               <FaArrowLeft className="mr-2" /> ハンドボールTOPに戻る
             </Link>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-4">〇〇柏</h1>
-            <p className="text-xl md:text-2xl text-cyan-100">中学生ハンドボールチーム</p>
+            <h1 className="text-5xl md:text-7xl font-black text-white mb-4">中学生チーム</h1>
+            <p className="text-xl md:text-2xl text-cyan-100">チーム名は現在調整中です</p>
           </motion.div>
         </div>
       </section>
@@ -26,14 +26,14 @@ export default function JuniorTeamPage() {
             <h2 className="text-4xl font-bold text-white mb-8">チーム概要</h2>
             <div className="glass p-8 rounded-3xl mb-12">
               <p className="text-gray-300 leading-relaxed text-lg">
-                〇〇柏は、ハンドボールに情熱を注ぐ中学生たちが集まるチームです。基礎技術の習得から戦術理解まで、段階的な指導により選手一人ひとりの成長をサポートします。全国大会出場を目標に、仲間と切磋琢磨しながら青春を謳歌しています。
+                中学生チームは、ハンドボールに情熱を注ぐ中学生たちが集まるチームです。南流山中学校を拠点に、基礎技術の習得から戦術理解まで段階的に指導し、選手一人ひとりの成長をサポートします。全国大会出場を目標に、仲間と切磋琢磨しながら青春を謳歌しています。
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               {[
                 { icon: FaUsers, label: 'メンバー数', value: '15名' },
-                { icon: FaCalendarDays, label: '練習日', value: '火・木・土' },
+                { icon: FaCalendarDays, label: '練習時間', value: '日曜 17:00〜19:00' },
                 { icon: FaTrophy, label: '目標', value: '全国大会出場' },
                 { icon: FaGraduationCap, label: '対象', value: '中学1-3年生' },
               ].map((item, i) => (
@@ -66,10 +66,12 @@ export default function JuniorTeamPage() {
 
             <div className="text-center">
               <Link
-                href="#contact"
+                href="https://www.instagram.com/nagasawariku/"
                 className="inline-block px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                体験練習のお申し込み
+                Instagramで体験練習を申し込む
               </Link>
             </div>
           </motion.div>
