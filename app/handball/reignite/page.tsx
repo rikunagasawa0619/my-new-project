@@ -8,16 +8,16 @@ export default function ReignitePage() {
   return (
     <div className="min-h-screen pt-20">
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-500 via-red-600 to-red-800" />
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-700 to-black" />
         <div className="relative z-10 text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Link href="/handball" className="inline-flex items-center text-orange-200 hover:text-white mb-4 transition-colors">
               <FaArrowLeft className="mr-2" /> ハンドボールTOPに戻る
             </Link>
             <div className="flex items-center justify-center gap-4 mb-4">
-              <FaFire className="text-6xl text-yellow-400" />
+              <FaFire className="text-6xl text-red-300" />
               <h1 className="text-5xl md:text-7xl font-black text-white">REIGNITE</h1>
-              <FaFire className="text-6xl text-yellow-400" />
+              <FaFire className="text-6xl text-red-300" />
             </div>
             <p className="text-xl md:text-2xl text-orange-100">社会人ハンドボールチーム</p>
           </motion.div>
@@ -84,7 +84,7 @@ export default function ReignitePage() {
               </p>
               <Link
                 href="https://www.instagram.com/nagasawariku/"
-                className="inline-block px-10 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all"
+                className="inline-block px-10 py-4 bg-gradient-to-r from-red-500 to-red-700 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-red-500/50 transition-all"
                 target="_blank"
                 rel="noopener noreferrer"
               >

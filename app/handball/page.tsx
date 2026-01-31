@@ -31,7 +31,7 @@ export default function HandballPage() {
       members: '20名',
       practice: '週1回',
       href: '/handball/reignite',
-      gradient: 'from-orange-400 to-red-500',
+      gradient: 'from-red-500 to-red-700',
     },
   ]
 
@@ -39,7 +39,7 @@ export default function HandballPage() {
     {
       name: '南流山中学校',
       address: '千葉県流山市（詳細はDMでご案内）',
-      access: '最寄り：南流山駅',
+      access: 'JR武蔵野線・つくばエクスプレス「南流山駅」徒歩10分（目安）',
     },
   ]
 
@@ -54,8 +54,9 @@ export default function HandballPage() {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 via-blue-700 to-blue-900">
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 via-cyan-800 to-black">
           <div className="absolute inset-0 opacity-20 bg-[url('/images/handball-pattern.svg')]" />
+          <div className="absolute inset-0 opacity-30 bg-[url('/images/handball-hero.svg')] bg-center bg-cover" />
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-7xl mx-auto">
@@ -300,12 +301,17 @@ export default function HandballPage() {
 
             {/* Photo Gallery Placeholder */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[1, 2, 3, 4].map((i) => (
+              {[
+                '/images/handball-gallery-1.svg',
+                '/images/handball-gallery-2.svg',
+                '/images/handball-gallery-3.svg',
+                '/images/handball-gallery-4.svg',
+              ].map((src, i) => (
                 <div
-                  key={i}
-                  className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl flex items-center justify-center border border-gray-700"
+                  key={src}
+                  className="aspect-square rounded-xl overflow-hidden border border-gray-700"
                 >
-                  <span className="text-gray-600 text-sm">写真{i}</span>
+                  <img src={src} alt={`ハンドボール活動イメージ${i + 1}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>

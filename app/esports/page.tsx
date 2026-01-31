@@ -11,19 +11,19 @@ export default function EsportsPage() {
       name: 'VALORANT',
       icon: SiValorant,
       description: '5v5タクティカルFPS。戦略と個人技が試される競技シーン',
-      color: 'from-red-500 to-pink-600',
+      color: 'from-fuchsia-500 to-pink-600',
     },
     {
       name: 'League of Legends',
       icon: SiLeagueoflegends,
       description: '5v5 MOBA。チームワークと戦術が勝敗を分けるゲーム',
-      color: 'from-blue-500 to-cyan-600',
+      color: 'from-cyan-400 to-sky-600',
     },
     {
       name: 'APEX Legends',
       icon: FaBullseye,
       description: 'バトルロイヤルFPS。3人チームで頂点を目指す',
-      color: 'from-orange-500 to-red-600',
+      color: 'from-fuchsia-500 to-cyan-500',
     },
   ]
 
@@ -31,7 +31,7 @@ export default function EsportsPage() {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-600 to-red-600">
+        <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-600 via-pink-600 to-cyan-500">
           <div className="absolute inset-0 opacity-30 bg-[url('/images/esports-pattern.svg')]" />
         </div>
 
@@ -39,7 +39,7 @@ export default function EsportsPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <FaGamepad className="text-7xl md:text-9xl text-white mx-auto mb-8" />
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-8">E-SPORTS</h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-purple-100 mb-10 font-medium leading-relaxed">
+            <p className="text-2xl md:text-3xl lg:text-4xl text-fuchsia-100 mb-10 font-medium leading-relaxed">
               Vtuber 氷雨莉桜氏を中心としたeスポーツサークル
             </p>
             <div className="inline-block px-8 py-4 bg-white/20 backdrop-blur-md rounded-full text-white font-bold text-lg md:text-xl">
@@ -55,7 +55,7 @@ export default function EsportsPage() {
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-center">
-              <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
                 About Circle
               </span>
             </h2>
@@ -78,7 +78,7 @@ export default function EsportsPage() {
                 { icon: FaTrophy, label: '大会参加実績', value: '10+' },
               ].map((item, i) => (
                 <div key={i} className="glass p-6 rounded-2xl text-center">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fuchsia-500 to-cyan-500 flex items-center justify-center mx-auto mb-4">
                     <item.icon className="text-2xl text-white" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-2">{item.value}</div>
@@ -149,7 +149,7 @@ export default function EsportsPage() {
                 },
               ].map((activity, i) => (
                 <div key={i} className="glass p-6 rounded-2xl flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-fuchsia-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
                     <activity.icon className="text-2xl text-white" />
                   </div>
                   <div>
@@ -167,11 +167,11 @@ export default function EsportsPage() {
       <section className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <FaShieldHalved className="text-6xl text-purple-500 mx-auto mb-6" />
+            <FaShieldHalved className="text-6xl text-fuchsia-500 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">参加について</h2>
             <div className="glass p-8 md:p-12 rounded-3xl">
               <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                当サークルは<span className="text-purple-400 font-semibold">完全招待制</span>となっております。
+                当サークルは<span className="text-fuchsia-300 font-semibold">完全招待制</span>となっております。
                 <br />
                 既存メンバーからの紹介、または氷雨莉桜氏の配信・SNSを通じて
                 <br />

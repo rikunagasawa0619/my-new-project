@@ -8,7 +8,7 @@ export default function JuniorTeamPage() {
   return (
     <div className="min-h-screen pt-20">
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 via-blue-600 to-blue-800" />
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 via-cyan-700 to-black" />
         <div className="relative z-10 text-center px-4">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Link href="/handball" className="inline-flex items-center text-cyan-200 hover:text-white mb-4 transition-colors">
@@ -67,7 +67,7 @@ export default function JuniorTeamPage() {
             <div className="text-center">
               <Link
                 href="https://www.instagram.com/nagasawariku/"
-                className="inline-block px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all"
+                className="inline-block px-10 py-4 bg-gradient-to-r from-cyan-500 to-cyan-700 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all"
                 target="_blank"
                 rel="noopener noreferrer"
               >

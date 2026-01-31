@@ -52,7 +52,7 @@ export default function Home() {
                 <span className="color-check">2チームが活躍中</span>
               </h4>
               <p>
-                千葉県流山市・南流山中学校を拠点に、中学生チーム（名称調整中）と社会人チーム「REIGNITE」が本気で青春を追いかけています。全国大会を目指す中学生から、もう一度燃え上がる社会人まで。
+                千葉県流山市・南流山中学校を拠点に、中学生チーム（名称調整中）と社会人チーム「REIGNITE」が本気で青春を追いかけています。南流山駅から徒歩圏内の拠点で、全国大会を目指す中学生から、もう一度燃え上がる社会人まで。
               </p>
               <span className="num">01</span>
             </div>
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="list-normal1">
             <div className="list up">
               <figure>
-                <img src="/images/photo1.jpg" alt="" />
+                <img src="/images/handball-vision.svg" alt="氷雨会のハンドボール活動イメージ" />
               </figure>
               <div className="text">
                 <h4>年齢や経験を問わず、本気で青春を追いかける</h4>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="list-grid-simple">
             <div className="list up">
               <figure>
-                <img src="/images/thumb1.jpg" alt="" />
+                <img src="/images/handball-thumb-junior.svg" alt="中学生チームのイメージ" />
               </figure>
               <div className="text">
                 <h4>中学生チーム（名称調整中）</h4>
@@ -176,7 +176,7 @@ export default function Home() {
 
             <div className="list up">
               <figure>
-                <img src="/images/thumb2.jpg" alt="" />
+                <img src="/images/handball-thumb-reignite.svg" alt="社会人チームのイメージ" />
               </figure>
               <div className="text">
                 <h4>社会人チーム「REIGNITE」</h4>
