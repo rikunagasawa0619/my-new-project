@@ -1,0 +1,14 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="60%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" />
+  <rect x="80" y="120" width="640" height="360" rx="36" stroke="#F87171" stroke-width="6" opacity="0.6" />
+  <text x="110" y="250" fill="#FFFFFF" font-size="44" font-family="sans-serif" font-weight="700">REIGNITE</text>
+  <text x="110" y="310" fill="#E2E8F0" font-size="22" font-family="sans-serif">社会人チーム</text>
+  <text x="110" y="360" fill="#E2E8F0" font-size="22" font-family="sans-serif">週1回 / 日曜 17:00-19:00</text>
+</svg>

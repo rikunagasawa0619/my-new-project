@@ -11,6 +11,7 @@ export default function Footer() {
         </p>
         <ul className="icons">
           <li><a href="https://x.com/rio_hisame" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/nagasawariku/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a></li>
         </ul>
         <p>
           活動拠点：千葉県柏市・流山市<br />

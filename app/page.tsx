@@ -14,9 +14,9 @@ export default function Home() {
         <div>
           <div className="text">
             <p>
-              大人の青春を追いかけて。<br />
-              Vtuber 氷雨莉桜氏による<br />
-              エンタメ活動の拠点
+              大人も本気で青春を追いかける。<br />
+              Vtuber 氷雨莉桜氏が主宰する<br />
+              スポーツ&エンタメコミュニティ
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
                 <span className="color-check">2チームが活躍中</span>
               </h4>
               <p>
-                千葉県柏市・流山市を拠点に、中学生チーム「〇〇柏」と社会人チーム「REIGNITE」が本気で青春を追いかけています。全国大会を目指す中学生から、もう一度燃え上がる社会人まで。
+                千葉県流山市・南流山中学校を拠点に、中学生チーム（名称調整中）と社会人チーム「REIGNITE」が本気で青春を追いかけています。南流山駅から徒歩圏内の拠点で、全国大会を目指す中学生から、もう一度燃え上がる社会人まで。
               </p>
               <span className="num">01</span>
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
               </h4>
               <p>
                 Vtuber 氷雨莉桜氏を中心としたeスポーツサークル。Valorant、League of Legends、APEX
-                Legendsを通じて真剣に交流を深めるコミュニティ。オンラインとオフラインで繋がる。
+                Legendsを通じて真剣に交流を深めるコミュニティ。完全招待制で、オンラインとオフラインの両方で繋がります。
               </p>
               <span className="num">02</span>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
                 <span className="color-check">リアルで繋がる</span>コミュニティ
               </h4>
               <p>
-                年齢や経験を問わず、本気で青春を追いかける全ての人に活動の場を提供します。定期的なオフラインイベントで、リアルでも繋がりを大切にしています。
+                年齢や経験を問わず、本気で青春を追いかける全ての人に活動の場を提供します。定期的なオフラインイベントで、リアルな繋がりも大切にしています。
               </p>
               <span className="num">03</span>
             </div>
@@ -107,7 +107,7 @@ export default function Home() {
                 <span className="marker">千葉県を拠点とするハンドボールチーム</span>
               </h4>
               <p>
-                柏市・流山市の体育館で週2〜3回の練習を実施。中学生チームは基礎から丁寧に指導し、全国大会出場を目指します。社会人チームは経験者から初心者まで、全員が「もう一度燃え上がる」をテーマに活動。
+                南流山中学校で週1回の練習を実施。中学生チームは基礎から丁寧に指導し、全国大会出場を目指します。社会人チームは経験者から初心者まで、全員が「もう一度燃え上がる」をテーマに活動。
               </p>
               <span className="num">01</span>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
               </h4>
               <p>
                 Valorant、League of Legends、APEX
-                Legendsの3タイトルで活動中。Discordでの日々の交流から、定期的なスクリム・練習会、オフラインイベントまで。完全招待制で質の高いコミュニティを維持しています。
+                Legendsの3タイトルで活動中。Discordでの日々の交流から、定期的なスクリム・練習会、オフラインイベントまで。完全招待制で落ち着いたコミュニティを維持しています。
               </p>
               <span className="num">02</span>
             </div>
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="list-normal1">
             <div className="list up">
               <figure>
-                <img src="/images/photo1.jpg" alt="" />
+                <img src="/images/handball-vision.svg" alt="氷雨会のハンドボール活動イメージ" />
               </figure>
               <div className="text">
                 <h4>年齢や経験を問わず、本気で青春を追いかける</h4>
@@ -164,19 +164,19 @@ export default function Home() {
           <div className="list-grid-simple">
             <div className="list up">
               <figure>
-                <img src="/images/thumb1.jpg" alt="" />
+                <img src="/images/handball-thumb-junior.svg" alt="中学生チームのイメージ" />
               </figure>
               <div className="text">
-                <h4>中学生チーム「〇〇柏」</h4>
+                <h4>中学生チーム（名称調整中）</h4>
                 <p>
-                  基礎から丁寧に指導し、全国大会出場を目指す中学生チーム。週2〜3回の練習で基礎体力と技術を磨きます。
+                  基礎から丁寧に指導し、全国大会出場を目指す中学生チーム。週1回の練習で基礎体力と技術を磨きます。
                 </p>
               </div>
             </div>
 
             <div className="list up">
               <figure>
-                <img src="/images/thumb2.jpg" alt="" />
+                <img src="/images/handball-thumb-reignite.svg" alt="社会人チームのイメージ" />
               </figure>
               <div className="text">
                 <h4>社会人チーム「REIGNITE」</h4>
@@ -208,11 +208,11 @@ export default function Home() {
                 <p>
                   各活動の詳細や参加方法について、お気軽にお問い合わせください。
                   <br />
-                  体験練習や見学も随時受け付けております。
+                  体験練習や見学も随時受け付けております。まずはInstagramのDMへご連絡ください。
                 </p>
                 <p className="btn1">
-                  <a href="mailto:rikunagasawa0619@gmail.com">
-                    <i className="fa-regular fa-envelope"></i>お問い合わせ
+                  <a href="https://www.instagram.com/nagasawariku/" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-instagram"></i>Instagramで問い合わせ
                   </a>
                 </p>
               </div>

@@ -1,0 +1,12 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)" />
+  <circle cx="180" cy="210" r="60" fill="#38BDF8" opacity="0.6" />
+  <circle cx="420" cy="380" r="90" fill="#1E293B" opacity="0.6" />
+  <text x="80" y="520" fill="#E2E8F0" font-size="28" font-family="sans-serif">練習風景イメージ</text>
+</svg>
